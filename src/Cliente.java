@@ -4,6 +4,14 @@ public class Cliente {
 	private String name;
 	private String lastName;
 	private int id;
+	private ApiExternal api;
+
+	public Cliente(ApiExternal api) {
+		this.api = api;
+	}
+	
+	public Cliente() {
+	}
 
 	public String formatedName() {
 		if(name != null && lastName != null){
@@ -36,7 +44,7 @@ public class Cliente {
 	}
 
 	public void validate() {
-		ApiExternal api = new ApiExternal();
+		api.validateCliente(getId());
 	}
 
 	public int getId() {
