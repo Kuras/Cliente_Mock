@@ -8,4 +8,4 @@ separate-jars/
 sources/
 .classpath
 .project
-
+bin/
