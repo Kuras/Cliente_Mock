@@ -61,4 +61,9 @@ public class Cliente {
 		return api1.validateCliente(getId());
 	}
 	
+	private boolean validatePrivate() {
+		
+		ApiExternal api1 = new ApiExternal();
+		return api1.validateCliente(getId());
+	}
 }

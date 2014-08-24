@@ -109,5 +109,21 @@ public class ClienteTest {
 		
 	}
 	
+	//WithoutDependency
+	@Test
+	public void testValidate_CallApi_WithOutDependency() {
+		
+		IApiValidate api = mock(IApiValidate.class);
+		TestableCliente testableCliente = new TestableCliente(api);
+		
+//		verify(api).validateCliente(anyInt());
+//		when(api.validateCliente(anyInt())).thenReturn(true);
+		
+		boolean restult = testableCliente.validateWithoutDependency();
+		assertTrue(restult );
+		
+		
+	}
+	
 }
  
