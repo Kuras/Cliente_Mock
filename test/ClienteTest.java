@@ -12,9 +12,15 @@ public class ClienteTest {
 
 	
 	@Test
-	public void test() {
+	public void testCompletedName_ReturnEmpty() {
 		
 		Cliente cliente = new Cliente();
+		
+		
+		String result = cliente.formatedName();
+		
+		
+		assertEquals("", result);
 	}
 
 }
