@@ -99,5 +99,15 @@ public class ClienteTest {
 		
 	}
 	
+	@Test
+	public void testValidate_CallApi_ReturnTrue() {
+		
+		when(iapi.validateCliente(anyInt())).thenReturn(true);
+		boolean result = c.validate();
+		
+		assertTrue(result);
+		
+	}
+	
 }
  
