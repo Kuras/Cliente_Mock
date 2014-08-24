@@ -36,7 +36,7 @@ public class Cliente {
 	}
 
 	public void validate() {
-			
+		ApiExternal api = new ApiExternal();
 	}
 
 	public int getId() {
