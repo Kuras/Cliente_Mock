@@ -55,6 +55,10 @@ public class Cliente {
 		this.id = id;
 	}
 	
-	
+	public boolean validateWithoutDependency() {
+		
+		ApiExternal api1 = new ApiExternal();
+		return api1.validateCliente(getId());
+	}
 	
 }
