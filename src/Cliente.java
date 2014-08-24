@@ -5,13 +5,16 @@ public class Cliente {
 	private String lastName;
 
 	public String formatedName() {
-		if(name != null){
+		if(name != null && lastName != null){
 			StringBuilder builder = new StringBuilder();
 			builder.append(getName());
 			builder.append(" ");
 			builder.append(getLastName());
 			return new String(builder );
-		}		
+		}else if (name != null){
+			return getName();
+		}
+		
 		return "";
 	}
 
