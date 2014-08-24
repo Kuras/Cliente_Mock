@@ -3,6 +3,7 @@ public class Cliente {
 
 	private String name;
 	private String lastName;
+	private int id;
 
 	public String formatedName() {
 		if(name != null && lastName != null){
@@ -36,6 +37,10 @@ public class Cliente {
 
 	public void validate() {
 			
+	}
+
+	public int getId() {
+		return this.id;
 	}
 	
 	

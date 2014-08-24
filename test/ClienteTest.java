@@ -56,6 +56,8 @@ public class ClienteTest {
 		Cliente cliente = new Cliente();
 		
 		cliente.validate();
+		
+		verify(mockApi).validateCliente(1);
 	}
 }
  
