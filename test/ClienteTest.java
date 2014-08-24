@@ -3,8 +3,11 @@ import static org.mockito.Mockito.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.MockitoAnnotations.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+@SuppressWarnings("deprecation")
 @RunWith(MockitoJUnitRunner.class) //MockitoAnnotations.initMocks(this)
 public class ClienteTest {
 
@@ -73,6 +76,19 @@ public class ClienteTest {
 		verify(mockApi).validateCliente(anyInt());
 	}
 	
+	@Mock
+	private IApiValidate iapi;
+	
+	@InjectMocks
+	private Cliente c;
+	
+	@Test
+	public void testValidate_CallApi_CalledApiWasRunned2() {
+		
+		c.validate();
+		
+		verify(iapi).validateCliente(anyInt());
+	}
 	
 }
  
