@@ -1,0 +1,11 @@
+LICENSE
+NOTICE
+jars-info.txt
+javadoc/
+mockito-1.9.5.zip
+mockito-all-1.9.5.jar
+separate-jars/
+sources/
+.classpath
+.project
+
