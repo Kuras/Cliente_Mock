@@ -9,3 +9,5 @@ sources/
 .classpath
 .project
 bin/
+.settings/
+infinitest.filters
