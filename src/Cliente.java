@@ -2,6 +2,7 @@
 public class Cliente {
 
 	private String name;
+	private String lastName;
 
 	public String formatedName() {
 		if(name != null){
@@ -16,6 +17,10 @@ public class Cliente {
 
 	public void setName(String name) {
 		this.name = name;		
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	
 	

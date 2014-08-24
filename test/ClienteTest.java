@@ -33,6 +33,19 @@ public class ClienteTest {
 		
 		assertEquals("name", result);
 	}
+	
+	@Test
+	public void testCompletedName_ReturnNameAndLastName() {
+		
+		Cliente cliente = new Cliente();
+		cliente.setName("name");
+		cliente.setLastName("lastName");
+		
+		String result = cliente.formatedName();
+		
+		
+		assertEquals("name lastName", result);
+	}
   
 }
  
