@@ -47,5 +47,15 @@ public class ClienteTest {
 		assertEquals("name lastName", result);
 	}
   
+	// Dependency injection
+	@Test
+	public void testValidate_CallApi_CalledApiWasRunned() {
+		
+		IApiValidate mockApi = mock(IApiValidate.class);
+		
+		Cliente cliente = new Cliente();
+		
+		cliente.validate();
+	}
 }
  
