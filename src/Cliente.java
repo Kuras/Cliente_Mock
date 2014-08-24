@@ -4,7 +4,10 @@ public class Cliente {
 	private String name;
 
 	public String formatedName() {
-		return this.getName();
+		if(name != null){
+			return this.getName();
+		}		
+		return "";
 	}
 
 	public String getName() {
