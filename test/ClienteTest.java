@@ -60,5 +60,19 @@ public class ClienteTest {
 		
 		verify(mockApi).validateCliente(1);
 	}
+	
+	@Test
+	public void testValidate_CallApi_CalledApiWasRunned1() {
+		
+		IApiValidate mockApi = mock(IApiValidate.class);
+		
+		Cliente cliente = new Cliente(mockApi);
+		
+		cliente.validate();
+		
+		verify(mockApi).validateCliente(anyInt());
+	}
+	
+	
 }
  
