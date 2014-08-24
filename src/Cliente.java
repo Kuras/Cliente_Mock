@@ -4,9 +4,9 @@ public class Cliente {
 	private String name;
 	private String lastName;
 	private int id;
-	private ApiExternal api;
+	private IApiValidate api;
 
-	public Cliente(ApiExternal api) {
+	public Cliente(IApiValidate api) {
 		this.api = api;
 	}
 	
