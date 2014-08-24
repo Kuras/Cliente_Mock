@@ -43,8 +43,8 @@ public class Cliente {
 		this.lastName = lastName;
 	}
 
-	public void validate() {
-		api.validateCliente(getId());
+	public boolean validate() {
+		return api.validateCliente(getId());
 	}
 
 	public int getId() {

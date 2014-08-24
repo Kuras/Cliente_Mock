@@ -53,7 +53,7 @@ public class ClienteTest {
 		
 		IApiValidate mockApi = mock(IApiValidate.class);
 		
-		Cliente cliente = new Cliente();
+		Cliente cliente = new Cliente(mockApi);
 		
 		cliente.validate();
 		
