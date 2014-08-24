@@ -90,5 +90,14 @@ public class ClienteTest {
 		verify(iapi).validateCliente(anyInt());
 	}
 	
+	@Test
+	public void testValidate_CallApi_ReturnFalse() {
+		
+		boolean result = c.validate();
+		
+		assertFalse(result);
+		
+	}
+	
 }
  
