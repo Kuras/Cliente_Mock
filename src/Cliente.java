@@ -6,9 +6,17 @@ public class Cliente {
 
 	public String formatedName() {
 		if(name != null){
-			return this.getName();
+			StringBuilder builder = new StringBuilder();
+			builder.append(getName());
+			builder.append(" ");
+			builder.append(getLastName());
+			return new String(builder );
 		}		
 		return "";
+	}
+
+	public String getLastName() {
+		return this.lastName;
 	}
 
 	public String getName() {
